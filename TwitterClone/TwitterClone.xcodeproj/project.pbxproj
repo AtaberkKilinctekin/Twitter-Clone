@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02334E3C27EA47200002C195 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02334E3B27EA47200002C195 /* HomePage.swift */; };
+		02334E3E27EA47290002C195 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02334E3D27EA47290002C195 /* PostView.swift */; };
 		02CC877627E4E14F006B9F8E /* TwitterCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC877527E4E14F006B9F8E /* TwitterCloneApp.swift */; };
 		02CC877827E4E14F006B9F8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC877727E4E14F006B9F8E /* ContentView.swift */; };
 		02CC877A27E4E152006B9F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02CC877927E4E152006B9F8E /* Assets.xcassets */; };
 		02CC877D27E4E152006B9F8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02CC877C27E4E152006B9F8E /* Preview Assets.xcassets */; };
 		02CC878527E4E3AF006B9F8E /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC878427E4E3AF006B9F8E /* LoginScreen.swift */; };
+		02E4C53527EA487B00AF0227 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 02E4C53427EA487B00AF0227 /* SwiftUIX */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02334E3B27EA47200002C195 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		02334E3D27EA47290002C195 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		02CC877227E4E14F006B9F8E /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CC877527E4E14F006B9F8E /* TwitterCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneApp.swift; sourceTree = "<group>"; };
 		02CC877727E4E14F006B9F8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,12 +33,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E4C53527EA487B00AF0227 /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02334E3F27EA47330002C195 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		02CC876927E4E14F006B9F8E = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +66,7 @@
 		02CC877427E4E14F006B9F8E /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				02334E3F27EA47330002C195 /* Models */,
 				02CC878327E4E397006B9F8E /* Views */,
 				02CC877527E4E14F006B9F8E /* TwitterCloneApp.swift */,
 				02CC877727E4E14F006B9F8E /* ContentView.swift */,
@@ -74,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				02CC878427E4E3AF006B9F8E /* LoginScreen.swift */,
+				02334E3B27EA47200002C195 /* HomePage.swift */,
+				02334E3D27EA47290002C195 /* PostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,6 +110,9 @@
 			dependencies = (
 			);
 			name = TwitterClone;
+			packageProductDependencies = (
+				02E4C53427EA487B00AF0227 /* SwiftUIX */,
+			);
 			productName = TwitterClone;
 			productReference = 02CC877227E4E14F006B9F8E /* TwitterClone.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 02CC876927E4E14F006B9F8E;
+			packageReferences = (
+				02E4C53327EA487B00AF0227 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = 02CC877327E4E14F006B9F8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,6 +173,8 @@
 				02CC877827E4E14F006B9F8E /* ContentView.swift in Sources */,
 				02CC877627E4E14F006B9F8E /* TwitterCloneApp.swift in Sources */,
 				02CC878527E4E3AF006B9F8E /* LoginScreen.swift in Sources */,
+				02334E3E27EA47290002C195 /* PostView.swift in Sources */,
+				02334E3C27EA47200002C195 /* HomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02E4C53327EA487B00AF0227 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02E4C53427EA487B00AF0227 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02E4C53327EA487B00AF0227 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02CC876A27E4E14F006B9F8E /* Project object */;
 }
