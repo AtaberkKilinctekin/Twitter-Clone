@@ -19,7 +19,7 @@ struct TabsView: View {
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                     }
-                NotificationsView()
+                NotificationsAllView()
                     .tabItem {
                         Image(systemName: "bell.fill")
                     }
@@ -35,6 +35,6 @@ struct TabsView: View {
 struct TabsView_Previews: PreviewProvider {
     static var previews: some View {
         TabsView()
-            .previewInterfaceOrientation(.portraitUpsideDown)
+            .previewInterfaceOrientation(.portrait)
     }
 }

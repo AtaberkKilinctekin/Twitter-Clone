@@ -13,12 +13,7 @@ struct LoginScreen: View {
     var body: some View {
         GeometryReader { proxy in
             ZStack{
-                LinearGradient(
-                    gradient: Gradient(stops: [
-                .init(color: Color(#colorLiteral(red: 0, green: 0.5606333613395691, blue: 0.9046587347984314, alpha: 1)), location: 0),
-                .init(color: Color(#colorLiteral(red: 0, green: 0.33340343832969666, blue: 0.5379921197891235, alpha: 1)), location: 1)]),
-                    startPoint: UnitPoint(x: 0.5, y: -3.0616171314629196e-17),
-                    endPoint: UnitPoint(x: 0.5, y: 0.9999999999999999)).ignoresSafeArea()
+                LinearGradient.backgroundColor.ignoresSafeArea()
                 
                 VStack{
                     if proxy.size.height < 400 {
@@ -48,6 +43,7 @@ struct LoginScreen: View {
                                 .font(.system(size: 32))
                             TextField("Username", text: $userName)
                                 .padding()
+                                
                         }
                         .ignoresSafeArea()
                         .frame(height: 45)
@@ -96,9 +92,11 @@ struct LoginScreen: View {
                     )
                     .frame(width: 100, height: 50)
                     .background(VisualEffectBlurView.init(blurStyle: .systemUltraThinMaterial))
-                    .background(Color.blue.opacity(0.7))
+                    .background(Color.systemBlue.opacity(0.7))
                     .foregroundColor(.white)
                     .cornerRadius(20)
+                    .shadow(color: .white, x: -0.5, y: -0.5, blur: 2)
+                    .shadow(color: .white, x: 0.5, y: 0.5, blur: 2)
                     
                 }
                 .padding()
@@ -114,3 +112,7 @@ struct LoginScreen_Previews: PreviewProvider {
             .previewInterfaceOrientation(.portrait)
     }
 }
+
+
+
+

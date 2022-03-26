@@ -11,7 +11,7 @@ struct NotificationsItemsView: View {
     var body: some View {
         HStack(alignment: .top){
             Image(systemName: "star.fill")
-                .foregroundColor(Color( red: 0.4470588266849518, green: 0.3019607961177826, blue: 0.7411764860153198, opacity: 0.9))
+                .foregroundColor(Color.starColor)
             VStack(alignment: .leading){
                 Circle()
                     .frame(width: 28, height: 28)
