@@ -9,26 +9,30 @@ import SwiftUI
 
 struct TabsView: View {
     var body: some View {
-        ZStack(alignment: .bottomTrailing){
-            TabView{
-                HomePage()
-                    .tabItem {
-                        Image(systemName: "house.fill")
-                    }
-                TrendsView()
-                    .tabItem {
-                        Image(systemName: "magnifyingglass")
-                    }
-                NotificationsAllView()
-                    .tabItem {
-                        Image(systemName: "bell.fill")
-                    }
-                MessagesView()
-                    .tabItem {
-                        Image(systemName: "envelope.fill")
-                    }
+        
+        
+            ZStack(alignment: .bottomTrailing){
+                TabView{
+                    HomePage()
+                        .tabItem {
+                            Image(systemName: "house.fill")
+                        }
+                    TrendsView()
+                        .tabItem {
+                            Image(systemName: "magnifyingglass")
+                        }
+                    NotificationsAllView()
+                        .tabItem {
+                            Image(systemName: "bell.fill")
+                        }
+                    MessagesView()
+                        .tabItem {
+                            Image(systemName: "envelope.fill")
+                        }
+                }
             }
-        }
+          
+        
     }
 }
 
